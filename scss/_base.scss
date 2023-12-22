@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+$backgroung-additional-color: #f9e0ae;
+$button-background-color: #c24914;
+$button-background-color-dark: #682c0e;
+$button-background-color-light: #fc8621;
+$footer-grey-color: #7d7a74;
+
+.container {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}

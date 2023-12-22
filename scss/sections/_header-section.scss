@@ -1,0 +1,80 @@
+.header-section {
+	background-color: $backgroung-additional-color;
+	height: 124px;
+	display: flex;
+	align-items: center;
+	@media screen and (max-width: 520px) {
+		height: 70px;
+	}
+	.header-container {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		@media screen and (max-width: 768px) {
+			img {
+				width: 90px;
+			}
+		}
+		@media screen and (max-width: 520px) {
+			img {
+				width: 40px;
+			}
+		}
+		.header-logo {
+			max-width: 135px;
+			max-height: 59px;
+		}
+	}
+	.header-nav {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+		width: 60%;
+		align-items: center;
+		.nav-button {
+			background-color: $button-background-color;
+			border: none;
+			border-radius: 10px;
+			font-family: Poppins, sans-serif;
+			color: #fff;
+			padding: 5px 10px;
+			font-size: 15px;
+			font-weight: 700;
+			margin-right: 10px;
+		}
+		.header-list {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 70%;
+			&-item {
+				display: block;
+				font-family: Poppins, sans-serif;
+				font-weight: 600;
+				font-size: 17px;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			.header-list {
+				&-item {
+					font-size: 12px;
+				}
+			}
+			.nav-button {
+				font-size: 6px;
+			}
+		}
+		@media screen and (max-width: 520px) {
+			.header-list {
+				&-item {
+					font-size: 5px;
+				}
+			}
+			.nav-button {
+				font-size: 2px;
+			}
+		}
+	}
+}

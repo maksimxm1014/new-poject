@@ -1,0 +1,230 @@
+.join-section {
+	margin-top: 250px;
+	position: relative;
+	@media screen and (max-width: 600px) {
+		margin-top: 125px;
+	}
+	.container {
+		@media screen and (max-width: 1000px) {
+			.join-content {
+				max-width: 40%;
+				margin-left: 10%;
+			}
+		}
+		@media screen and (max-width: 850px) {
+			.join-content {
+				margin: 0;
+			}
+		}
+		@media screen and (max-width: 540px) {
+			.join-content {
+				transform: translateX(-40px);
+			}
+		}
+		.join-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 50%;
+			h2 {
+				text-align: center;
+				font-weight: 600;
+				font-family: Poppins;
+				font-size: 48px;
+				max-width: 530px;
+			}
+			p {
+				font-family: Poppins;
+				font-size: 20px;
+				font-weight: 400;
+				margin-top: 22px;
+				text-align: center;
+			}
+			button {
+				margin-top: 63px;
+				font-weight: 700;
+				font-family: Poppins;
+				font-size: 20px;
+				color: #fff;
+				background-color: $button-background-color-light;
+				border: none;
+				border-radius: 10px;
+				padding: 12px 52px;
+			}
+			@media screen and (max-width: 1000px) {
+				h2 {
+					font-size: 25px;
+				}
+				p {
+					font-size: 10px;
+					margin-top: 15px;
+				}
+				button {
+					margin-top: 30px;
+					font-size: 10px;
+				}
+			}
+			@media screen and (max-width: 750px) {
+				h2 {
+					font-size: 15px;
+				}
+				p {
+					font-size: 7px;
+					margin-top: 15px;
+				}
+				button {
+					margin-top: 30px;
+					font-size: 10px;
+					padding: 7px 40px;
+				}
+			}
+			@media screen and (max-width: 540px) {
+				p,
+				h2,
+				button {
+					margin-top: 20px;
+				}
+				h2 {
+					font-size: 10px;
+				}
+				p {
+					font-size: 5px;
+				}
+				button {
+					font-size: 7px;
+					padding: 5px 30px;
+				}
+			}
+		}
+	}
+	img {
+		position: absolute;
+		top: 45%;
+		right: 3%;
+		z-index: -1;
+	}
+	.women-in-white-background {
+		position: absolute;
+		top: 0;
+		right: 35%;
+		width: 100px;
+		height: 100px;
+		background-image: url(./../../images/women-in-white-background.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.men-in-jacket {
+		position: absolute;
+		margin-right: 20px;
+		top: 50%;
+		right: 0%;
+		width: 100px;
+		height: 100px;
+		background-image: url(./../../images/men-in-jacket.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.men-in-white-T-shirt {
+		position: absolute;
+		margin-left: 20px;
+		top: 110%;
+		left: 0%;
+		width: 100px;
+		height: 100px;
+		background-image: url(./../../images/men-in-white-T-shirt.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.women-in-red-bacground {
+		position: absolute;
+		top: 145%;
+		left: 30%;
+		width: 100px;
+		height: 100px;
+		background-image: url(./../../images/women-in-red-bacground.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	@media screen and (max-width: 1000px) {
+		img {
+			right: 10%;
+			top: 20%;
+			width: 500px;
+			height: 500px;
+		}
+		.women-in-red-bacground {
+			left: 25%;
+			top: 170%;
+			width: 70px;
+			height: 70px;
+		}
+		.women-in-white-background {
+			top: 0%;
+			right: 35%;
+			width: 70px;
+			height: 70px;
+		}
+		.men-in-white-T-shirt {
+			left: 5%;
+			width: 70px;
+			height: 70px;
+		}
+		.men-in-jacket {
+			top: 70%;
+			right: 5%;
+			width: 70px;
+			height: 70px;
+		}
+	}
+	@media screen and (max-width: 750px) {
+		img {
+			right: 17%;
+			width: 350px;
+			height: 350px;
+		}
+		.women-in-red-bacground {
+			left: 20%;
+			width: 50px;
+			height: 50px;
+		}
+		.women-in-white-background {
+			width: 50px;
+			height: 50px;
+		}
+		.men-in-white-T-shirt {
+			width: 50px;
+			height: 50px;
+		}
+		.men-in-jacket {
+			width: 50px;
+			height: 50px;
+		}
+	}
+	@media screen and (max-width: 540px) {
+		img {
+			top: 45%;
+			width: 230px;
+			height: 230px;
+		}
+		.women-in-red-bacground {
+			width: 30px;
+			height: 30px;
+		}
+		.women-in-white-background {
+			top: 20%;
+			width: 30px;
+			height: 30px;
+		}
+		.men-in-white-T-shirt {
+			width: 30px;
+			height: 30px;
+			left: 0;
+			margin-left: 10px;
+		}
+		.men-in-jacket {
+			top: 90%;
+			width: 30px;
+			height: 30px;
+		}
+	}
+}

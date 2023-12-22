@@ -1,0 +1,123 @@
+h3 {
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+}
+@media screen and (max-width: 870px) {
+	h3 {
+		font-size: 15px;
+	}
+	svg {
+		width: 20px;
+		height: 20px;
+	}
+}
+@media screen and (max-width: 720px) {
+	h3 {
+		font-size: 10px;
+	}
+	svg {
+		width: 13px;
+		height: 13px;
+	}
+}
+.footer {
+	padding: 50px 0;
+	height: 370px;
+	background-color: $backgroung-additional-color;
+	margin-top: 510px;
+	@media screen and (max-width: 550px) {
+		margin-top: 250px;
+		height: 300px;
+	}
+	.container {
+		gap: 20px;
+		height: 300px;
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		max-height: 200px;
+		img {
+			margin-top: 5%;
+			max-width: 135px;
+			max-height: 59px;
+			@media screen and (max-width: 750px) {
+				max-width: 100px;
+			}
+			@media screen and (max-width: 550px) {
+				max-width: 70px;
+			}
+		}
+		.follow-us {
+			.icons {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 23px;
+				.follow-us-icons {
+					fill: $footer-grey-color;
+				}
+			}
+		}
+		@media screen and (max-width: 870px) {
+			.follow-us {
+				.icons {
+					gap: 10px;
+				}
+			}
+		}
+		@media screen and (max-width: 550px) {
+			.follow-us {
+				.icons {
+					gap: 2px;
+				}
+			}
+		}
+		.useful-links {
+			li {
+				list-style-type: none;
+				a {
+					line-height: 1;
+					color: $footer-grey-color;
+					font-family: Poppins;
+					font-size: 15px;
+					font-weight: 400;
+					@media screen and (max-width: 870px) {
+						font-size: 10px;
+					}
+					@media screen and (max-width: 550px) {
+						line-height: 0.5;
+						font-size: 3px;
+					}
+				}
+			}
+		}
+		.contacts {
+			li {
+				list-style-type: none;
+				a {
+					color: $footer-grey-color;
+					font-family: Poppins;
+					font-size: 15px;
+					font-weight: 400;
+					text-decoration: none;
+					@media screen and (max-width: 870px) {
+						font-size: 10px;
+					}
+					@media screen and (max-width: 550px) {
+						font-size: 3px;
+					}
+				}
+			}
+		}
+	}
+	p {
+		color: $footer-grey-color;
+		text-align: center;
+		font-weight: 400;
+		font-family: Poppins;
+		font-size: 15px;
+		margin: 0;
+		padding: 0;
+	}
+}
